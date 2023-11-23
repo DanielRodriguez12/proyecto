@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Peugeot - Página de Inicio</title>
+  <style>
+    /* Estilos CSS para la página de inicio */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('peugeot.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff; /* Color del texto en la portada */
+  }
+  
+  p {
+  margin-right: 20px; /* Ajusta el margen derecho para mover "Inicia sesión aquí" hacia la derecha */
+  text-align: right;
+}
+  
+   a {
+            color: #FFF300; /* Cambia el color del enlace */
+            text-decoration: none; /* Elimina el subrayado predeterminado del enlace */
+        }
+
+        a:hover {
+            color: #CC0000; /* Cambia el color al pasar el cursor sobre el enlace */
+        }
+
+
+/* Estilos para el contenido */
+header {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar visibilidad del texto */
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 36px;
+  transition: color 0.3s ease-in-out;
+}
+
+h1:hover {
+  color: #d35400;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff; /* Color del texto en la portada */
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #d35400;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+}
+
+section {
+  /* Eliminar fondo y ajustar estilos */
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 50%;
+  text-align: left;
+}
+
+.descripcion {
+  max-width: 80%;
+  text-align: right;
+  color: #333;
+  /* Cambiar fondo semi-transparente a transparente */
+  background-color: transparent;
+  margin-right: 0px; /* Añadir margen derecho para mover el contenido a la derecha */
+}
+
+/* Estilos mejorados para la descripción del vehículo */
+.descripcion h2 {
+  font-size: 40px; /* Ajustar tamaño de fuente para el título */
+  color: #d35400; /* Cambiar color del título */
+  margin-bottom: 10px; /* Agregar espacio entre el título y el párrafo */
+}
+
+.descripcion p {
+  font-size: 18px; /* Ajustar tamaño de fuente para el párrafo */
+  line-height: 1.5; /* Ajustar altura de línea para una mejor legibilidad */
+  
+}
+
+/* Estilos para el botón "Hazte Socio" */
+.boton-miembro {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 20px;
+  display: inline-block;
+  text-align: right;
+}
+
+.boton-miembro:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para la oferta por tiempo limitado */
+.limited-offer {
+  font-style: italic;
+  font-size: 24px;
+  color: #FFD700; /* Color dorado para resaltar */
+  text-align: center;
+  margin-bottom: 20px; /* Agregar espacio inferior */
+}
+
+footer {
+  text-align: right;
+  padding: 10px;
+  background-color: rgba(51, 51, 51, 0.8);
+  color: #fff;
+}
+
+/* Estilos para la portada */
+.cover {
+  text-align: center;
+}
+
+.cover-button {
+  background-color: #d35400;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.cover-button:hover {
+  background-color: #a04000;
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+    </div>
+    <nav>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="descripcion">
+        <div class="oferta-limitada">Oferta por tiempo limitado</div>
+        <h2>Peugeot 508</h2>
+        <p>Tu Peugeot 508 con una garantía de 24 meses para que solo pienses en disfrutar.<br> Aceptamos tu vehículo como parte del pago. <br>¡Entra ya en la web y regístrate! Bonito, ¿verdad?</p>
+        <!-- Agregar el botón "Hazte Socio" -->
+        <a href="formulario.html" class="boton-miembro">Hazte Socio</a>
+      </div>
+	  <div>
+    <p>¿Ya eres socio? <a href="inicio.php">Inicia sesión aquí</a></p>
+</div>
+    </section>
+  </main>
+
+  <footer>
+	<p>&copy; 2023 Peugeot. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

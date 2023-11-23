@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Datos Personales</title>
+    <style>
+     body {
+    background: linear-gradient(45deg, #2DEDA4, #F468B0);   /* Establece un fondo con un degradado lineal */
+    background-size: 400% 400%;                            /* Establece el tamaño del degradado */
+    animation: gradient 15s infinite;                      /* Inicia una animación llamada "gradient" durante 15 segundos y la hace infinita */
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h2, form {
+    background: rgba(255, 255, 255, 0.8);    /* Establece un fondo semitransparente para encabezados y formularios */
+    padding: 20px;                           /* Añade relleno interno alrededor del contenido */
+    border-radius: 10px;                     /* Agrega esquinas redondeadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra alrededor del elemento */
+    margin: 20px auto;                       /* Centra el elemento horizontalmente */
+    max-width: 600px;                        /* Establece el ancho máximo del elemento */
+}
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: calc(100% - 20px);        /* Ajusta el ancho para evitar desbordamiento */
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: row;        /* Alinea los elementos en una fila */
+    align-items: center;
+    justify-content: flex-start;     /* Alinea los elementos a la izquierda */
+    margin-bottom: 20px;
+}
+
+.radio-group label {
+    margin-right: 20px;        /* Añade espacio entre las etiquetas y los radio buttons */
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    background-color: #2ecc71;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+    </style>
+</head>
+
+<body>
+    <h2>Formulario de registro</h2>
+    <form action="procesar_registro.php" method="post">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+		
+		<div>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+        </div>
+
+        <div>
+			<label for="contraseña">Contraseña (mínimo 8 caracteres):</label>
+			<input type="password" id="contraseña" name="contraseña" required minlength="8">
+		</div>
+
+
+        <div>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="localidad">Localidad:</label>
+            <input type="text" id="localidad" name="localidad" required>
+        </div>
+
+        <div>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </div>
+
+<div>
+            <label for="direccion">Dirección:</label>
+            <input type="direccion" id="direccion" name="direccion" required>
+        </div>
+
+        <div>
+            <label for="codigo_postal">Código Postal:</label>
+            <input type="text" id="codigo_postal" name="codigo_postal" required>
+        </div>
+
+        <div class="radio-group">
+            <label for="sexo">Sexo:</label>
+			<label for="sexo_masculino">Masculino</label>
+            <input type="radio" id="sexo_masculino" name="sexo" value="Masculino" required>
+             <label for="sexo_femenino">Femenino</label>
+            <input type="radio" id="sexo_femenino" name="sexo" value="Femenino" required>
+        </div>
+
+        <div>
+            <label for="id">Firma (DNI):</label>
+            <textarea id="id" name="id" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" name="enviar">Enviar</button>
+    </form>
+</body>
+</html>
